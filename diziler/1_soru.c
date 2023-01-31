@@ -4,6 +4,7 @@
 int main()
 {
     int kacTane=0, dizi[6];
+    printf("Sayilari giriniz : \n");
     for(int i=0; i<6; i++)
     {
         scanf("%d", &dizi [i]);
