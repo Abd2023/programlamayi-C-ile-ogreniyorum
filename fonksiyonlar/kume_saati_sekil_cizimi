@@ -1,0 +1,50 @@
+//soru : sekil cizim
+
+#include <stdio.h>
+#include <stdlib.h>
+int sekil(int , char);
+int main()
+{
+    int n;
+    char karakter;
+    printf("Karakteri giriniz: "); scanf("%c", &karakter);
+    printf("sayi : "); scanf("%d", &n);
+    sekil(n, karakter);
+    return 0;
+}
+
+int sekil(int n, char karakter)
+{
+
+    for(int i=1; i<=n; i++)
+    {
+        for(int j=1; j<=i; j++)
+        {
+            printf(" ");
+        }
+        for(int k=i; k<n; k++)
+        {
+            printf("%c", karakter);
+        }
+        for(int l=i; l<=n; l++)
+            printf("%c", karakter);;
+        printf("\n");
+    }
+
+    for(int i=1; i<=n; i++)
+    {
+        for(int j=i; j<=n; j++)
+        {
+            printf(" ");
+        }
+        for(int k=1; k<i ; k++)
+        {
+            printf("%c", karakter);
+        }
+        for(int l=1; l<=i ; l++)
+        {
+            printf("%c", karakter);
+        }
+        printf("\n");
+    }
+}
