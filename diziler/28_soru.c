@@ -1,39 +1,77 @@
-//11.28
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+void tekCiftDuzenle(int numara[100], int sayi)
+{
+    int a = 0;
+    int i;
+    int j;
+
+    for (i = 0; i < sayi; i++)
+    {
+        if ((i % 2) == 0)
+        {
+            if ((numara[i] % 2) == 1)
+                continue;
+            else
+            {
+                for (j = i + 1; j < sayi; j++)
+                {
+                    if ((numara[j] % 2) == 1)
+                    {
+                        a = numara[i];
+                        numara[i] = numara[j];
+                        numara[j] = a;
+                        break;
+                    }
+                }
+                continue;
+            }
+        }
+        else
+        {
+            if ((numara[i] % 2) == 0)
+                continue;
+            else
+            {
+                for (j = i + 1; j < sayi; j++)
+                {
+                    if ((numara[j] % 2) == 0)
+                    {
+                        a = numara[i];
+                        numara[i] = numara[j];
+                        numara[j] = a;
+                        break;
+                    }
+                }
+                continue;
+            }
+        }
+    }
+}
+
 int main()
 {
-    int ogrenci_sayisi;
-    do
+
+    int sayi;
+    printf("Ogrenci sayisini giriniz = ");
+    scanf("%d", &sayi);
+    int numara[100];
+    printf("Ogrenci numaralarini giriniz(%d adet) : ", sayi);
+    for (int i = 0; i < sayi; i++)
     {
-    printf("Ogrenci sayisini giriniz  : ");
-    scanf("%d", &ogrenci_sayisi);
-    }while(ogrenci_sayisi>100);
-    int dizi[ogrenci_sayisi];
-    printf("Ogrenci numaralarini giriniz (5 adet) : ");
-    for(int i=0; i<ogrenci_sayisi; i++)
-        scanf("%d", &dizi[i]);
-    printf("-----------------------------------------\n");
-    tek_cift_duzenle(dizi, ogrenci_sayisi);
+        scanf("%d", &numara[i]);
+    }
+    tekCiftDuzenle(numara, sayi);
+
+    printf("\n\n");
+
+    printf("Numaralarin bir tek, bir cift siralanmis hali : \n");
+
+    for (int i = 0; i < sayi; i++)
+    {
+        printf("%d ", numara[i]);
+    }
+
     return 0;
-}
-void tek_cift_duzenle(int dizi[], int adet)
-{
-    int tek[adet],  cift[adet];
-    int index1=0, index2=0;
-    for(int i=0; i<adet; i++)
-    {
-        if(dizi[i]%2==0)
-        {
-            cift[index1++]=dizi[i];
-        }
-        if(dizi[i]%2==1)
-        {
-            tek[index2++]=dizi[i];
-        }
-    }
-    for(int i=0, j=0; i<index1 , j<index2; i++, j++)
-    {
-        //if(tek[i] !=0 || cift[i]!=0)
-        printf("%d  %d  ", tek[j], cift[i]);
-    }
 }
