@@ -1,6 +1,6 @@
-#C-programlama
+# C-programlama
 
--soruları bu kitapta görebilirsiniz :  http://www.palmeyayinevi.com/programlamayi-c-Ile-ogrenIyorum
+- soruları bu kitapta görebilirsiniz :  http://www.palmeyayinevi.com/programlamayi-c-Ile-ogrenIyorum
 
 - C programlama
 - Giriş/Çıkış(Input/Output)
