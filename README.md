@@ -1,6 +1,17 @@
-# programlamayi-C-ile-ogreniyorum
-" prgramlamyı_C_ile_ögreniyorum " kitabındaki SORU çözümü
+#C-programlama
 
-soruları bu kitaptan görebiliyorsunuz.
+-soruları bu kitapta görebilirsiniz :  http://www.palmeyayinevi.com/programlamayi-c-Ile-ogrenIyorum
 
-http://www.palmeyayinevi.com/programlamayi-c-Ile-ogrenIyorum
+- C programlama
+- Giriş/Çıkış(Input/Output)
+- Kontrol Yapıları ( Decision Making )
+- Döngüler ( Loops )
+- Fonksiyonlar ( Functions )
+- Özyineleme ( Recursion )
+- Diziler ( Arrays )
+- İşaretçiler ( Pointers )
+- Dizgiler ( Strings )
+- Yapılar Ve Birlikler ( Structures )
+- Bellek İşlemleri ( Memory Management )
+- Bagli Listeler ( Linked List )
+- Dosya İşlemleri (File I/O)
