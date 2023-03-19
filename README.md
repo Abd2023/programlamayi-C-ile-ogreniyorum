@@ -1,4 +1,4 @@
-# C-programlama
+# Programlamayı C ile öğreniyorum
 
 - soruları bu kitapta görebilirsiniz :  http://www.palmeyayinevi.com/programlamayi-c-Ile-ogrenIyorum
 
